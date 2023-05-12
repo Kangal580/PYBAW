@@ -1,6 +1,7 @@
 import ctypes
 import subprocess
 import colorama
+import os
 
 def is_admin():
     try:
@@ -9,7 +10,9 @@ def is_admin():
         return False
 
 def option_test():
-    subprocess.call(["C:\\Users\\toode\\Desktop\\Kode Test\\test.bat"], shell=True)
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        bat_path = os.path.join(base_path, "starto.bat")
+        subprocess.call([bat_path], shell=True, cwd=base_path)
 
 def main():
     if not is_admin():
