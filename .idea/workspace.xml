@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9808ef9-2330-4eda-8686-5fb7e56f37bb" name="Changes" comment="Test">
+    <list default="true" id="b9808ef9-2330-4eda-8686-5fb7e56f37bb" name="Changes" comment="Packaged og lavet om til en applikation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainadmintest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainadmintest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/mainadmintest6.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/mainadmintest6.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mainadmintest6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mainadmintest6.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainadmintest6.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainadmintest6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starto.bat" beforeDir="false" afterPath="$PROJECT_DIR$/starto.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,8 @@
       <workItem from="1683887458695" duration="496000" />
       <workItem from="1683887968288" duration="6000" />
       <workItem from="1683888535417" duration="51000" />
-      <workItem from="1683889068638" duration="462000" />
+      <workItem from="1683889068638" duration="1124000" />
+      <workItem from="1684140602052" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1683801428589</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683801958542</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Packaged og lavet om til en applikation">
+      <created>1683889601893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683889601893</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +103,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Packaged og lavet om til en applikation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packaged og lavet om til en applikation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Kode_Test$mainadmintest6.coverage" NAME="mainadmintest6 Coverage Results" MODIFIED="1680244910360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

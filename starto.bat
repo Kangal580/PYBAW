@@ -1,2 +1,2 @@
 @echo off
-start chrome https://www.youtube.com
+REM del %TEMP%\*.* /f /s /q

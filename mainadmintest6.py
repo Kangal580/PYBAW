@@ -13,6 +13,8 @@ def option_test():
         base_path = os.path.dirname(os.path.abspath(__file__))
         bat_path = os.path.join(base_path, "starto.bat")
         subprocess.call([bat_path], shell=True, cwd=base_path)
+        input("Tryk Enter for at gå tilbage...")
+        main()
 
 def main():
     if not is_admin():
@@ -22,18 +24,18 @@ def main():
     colorama.init()  # Initialize colorama
     print(colorama.Fore.RED + "Velkommen til terminalen" + colorama.Style.RESET_ALL)
     print("_________________________")
-    print("1. Test")
-    print("2. Test")
+    print("1. Ryd op på filer")
+    print("2. Ryd op på netværk")
     choice = input("Vælge et tal: ")
     if choice == "1":
         option_test()
+
     elif choice == "2":
-        return
+        input("Tryk enter for at afslutte...")
     else:
         print("Forkert værdi. Prøv igen.")
         main()
 
-    input("Tryk enter for at afslutte...")
 
 if __name__ == '__main__':
     main()
