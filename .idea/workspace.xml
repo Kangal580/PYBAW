@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9808ef9-2330-4eda-8686-5fb7e56f37bb" name="Changes" comment="Tilføjet: Kan nu slette temp filer? &quot;test 4&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/mainadmintest6.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/mainadmintest6.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/warn-mainadmintest6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/warn-mainadmintest6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mainadmintest6/xref-mainadmintest6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/mainadmintest6/xref-mainadmintest6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mainadmintest6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mainadmintest6.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainadmintest6.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainadmintest6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainadmintest6.spec" beforeDir="false" afterPath="$PROJECT_DIR$/mainadmintest6.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starto.bat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
       <workItem from="1683887968288" duration="6000" />
       <workItem from="1683888535417" duration="51000" />
       <workItem from="1683889068638" duration="1124000" />
-      <workItem from="1684140602052" duration="6759000" />
+      <workItem from="1684140602052" duration="6857000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1683801428589</created>
@@ -129,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684148412315</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tilføjet: Kan nu slette temp filer? &quot;test 4&quot;">
+      <created>1684149942978</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684149942978</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -9,32 +9,12 @@ def is_admin():
     except:
         return False
 
-def create_batch_file(filename, commands):
-    with open(filename, "w") as file:
-        file.write(commands)
-
 def option_filer():
-    base_path = os.path.dirname(os.path.abspath(__file__))
-    bat_path = os.path.join(base_path, "filer.bat")
-    commands = """
-@echo off
-
-del /S /q "%userprofile%\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\*.*"
-rd /S /q "%windir%\\temp"
-rd /S /q "%systemdrive%\\$RECYCLE.BIN"
-rd /S /q "%systemdrive%\\temp"
-rd /S /q "%temp%"
-rd /S /q "%userprofile%\\AppData\\Local\\Temp"
-rd /S /q "%userprofile%\\AppData\\Local\\Tmp"
-cls
-
-exit
-"""
-    create_batch_file(bat_path, commands)
-
-    subprocess.call([bat_path], shell=True)
-    input("Success! Tryk Enter for at gå tilbage.")
-    main()
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        bat_path = os.path.join(base_path, "filer.bat")
+        subprocess.call([bat_path], shell=True, cwd=base_path)
+        input("Success! Tryk Enter for at gå tilbage.")
+        main()
 
 
 def option_net():
