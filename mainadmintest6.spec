@@ -8,7 +8,7 @@ a = Analysis(
     ['mainadmintest6.py'],
     pathex=[],
     binaries=[],
-    datas=[('starto.bat', '.')],
+    datas=[('filer.bat', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
