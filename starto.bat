@@ -1,10 +1,11 @@
-
 @echo off
-cls
-del /Q %LOCALAPPDATA%\Microsoft\Windows\INetCache\IE\*.* >nul 2>&1
-del /Q "%SYSTEMROOT%\Downloaded Program Files\*.*" >nul 2>&1
-rd /s /q %SYSTEMDRIVE%\$Recycle.bin >nul 2>&1
-del /Q %TEMP%\*.* >nul 2>&1
-del /Q %SYSTEMROOT%\Temp\*.* >nul 2>&1
-del /Q %SYSTEMROOT%\Prefetch\*.* >nul 2>&1
-cls
+
+del /S /q "%userprofile%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
+del /S /q "%windir%\temp\*.*"
+del /S /q "%systemdrive%\$RECYCLE.BIN\*.*"
+del /S /q "%systemdrive%\temp\*.*"
+del /S /q "%temp%\*.*"
+del /S /q "%userprofile%\AppData\Local\Temp\*.*"
+del /S /q "%userprofile%\AppData\Local\Tmp\*.*"
+
+pause
