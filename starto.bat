@@ -1,30 +1,10 @@
+
 @echo off
-
-echo Cleaning temporary files...
-
-REM Delete temporary files in the user's temp folder
-echo Deleting temporary files in the user's temp folder...
-for %%F in ("%TEMP%\*.*") do (
-    del "%%F" > nul 2>&1
-    if not errorlevel 1 (
-        echo Deleted file: %%F
-    ) else (
-        echo Unable to delete file: %%F
-    )
-)
-echo Temporary files in the user's temp folder deleted.
-
-REM Delete temporary files in the Windows temp folder
-echo Deleting temporary files in the Windows temp folder...
-for %%F in ("%windir%\Temp\*.*") do (
-    del "%%F" > nul 2>&1
-    if not errorlevel 1 (
-        echo Deleted file: %%F
-    ) else (
-        echo Unable to delete file: %%F
-    )
-)
-echo Temporary files in the Windows temp folder deleted.
-
-echo Temporary files cleaned successfully.
-pause
+cls
+del /Q %LOCALAPPDATA%\Microsoft\Windows\INetCache\IE\*.* >nul 2>&1
+del /Q "%SYSTEMROOT%\Downloaded Program Files\*.*" >nul 2>&1
+rd /s /q %SYSTEMDRIVE%\$Recycle.bin >nul 2>&1
+del /Q %TEMP%\*.* >nul 2>&1
+del /Q %SYSTEMROOT%\Temp\*.* >nul 2>&1
+del /Q %SYSTEMROOT%\Prefetch\*.* >nul 2>&1
+cls
