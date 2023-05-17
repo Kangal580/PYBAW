@@ -1,0 +1,69 @@
+import ctypes  # Modul til adgang til Windows API-funktioner
+import subprocess  # Modul til eksekvering af eksterne kommandoer
+import colorama  # Modul til manipulation af tekstfarver i terminalen
+import os  # Modul til funktionaliteter relateret til operativsystemet
+
+# Funktion til at kontrollere om den aktuelle bruger har administratorrettigheder
+def is_admin():
+    try:
+        return ctypes.windll.shell32.IsUserAnAdmin()  # Tjekker om brugeren er administrator ved hjælp af Windows API-funktionen
+    except:
+        return False
+
+# Funktion til at håndtere funktionaliteten "option_filer"
+def option_filer():
+    base_path = os.path.dirname(os.path.abspath(__file__))  # Få stien til den aktuelle scripts mappe
+    bat_path = os.path.join(base_path, "filer.bat")  # Opret den fulde sti til filen "filer.bat"
+    subprocess.call([bat_path], shell=True, cwd=base_path)  # Eksekverer filen "filer.bat"
+    input("Success! Tryk Enter for at gå tilbage.")  # Viser en succesbesked og venter på brugerens input
+    main()  # Vender tilbage til hovedmenuen
+
+# Funktion til at håndtere funktionaliteten "option_net"
+def option_net():
+    base_path = os.path.dirname(os.path.abspath(__file__))  # Få stien til den aktuelle scripts mappe
+    bat_path = os.path.join(base_path, "net.bat")  # Opret den fulde sti til filen "net.bat"
+    subprocess.call([bat_path], shell=True, cwd=base_path)  # Eksekverer filen "net.bat"
+    input("Success! Tryk Enter for at gå tilbage.")  # Viser en succesbesked og venter på brugerens input
+    main()  # Vender tilbage til hovedmenuen
+
+# Funktion til at håndtere funktionaliteten "option_indstillinger"
+def option_indstillinger():
+    base_path = os.path.dirname(os.path.abspath(__file__))  # Få stien til den aktuelle scripts mappe
+    bat_path = os.path.join(base_path, "indstillinger.bat")  # Opret den fulde sti til filen "indstillinger.bat"
+    subprocess.call([bat_path], shell=True, cwd=base_path)  # Eksekverer filen "indstillinger.bat"
+    input("Success! Tryk Enter for at gå tilbage.")  # Viser en succesbesked og venter på brugerens input
+    main()  # Vender tilbage til hovedmenuen
+
+# Hovedfunktion til at vise menuen og håndtere brugerens valg
+def main():
+    if not is_admin():
+        input("Venligst åben filen som Admin. Tryk enter for at afslutte...")  # Bed brugeren om at køre scriptet som administrator
+        return
+
+    colorama.init()  # Initialiserer colorama-modulet for at muliggøre manipulation af tekstfarver i terminalen
+    print(colorama.Fore.RED + "Velkommen til terminalen" + colorama.Style.RESET_ALL)  # Udskriver en velkomstbesked med rød farve
+    print("_________________________")
+    print ("1. Ryd op på filer")
+    print("2. Ryd op på netværk")
+    print("3. Anvend ydeevneindstillinger")
+    print("4. Afslut programmet")
+    choice = input("Vælge et tal: ") # Læser brugerens valg
+    if choice == "1":
+    option_filer() # Kører funktionaliteten "option_filer"
+    
+    elif choice == "2":
+    option_net()  # Kører funktionaliteten "option_net"
+
+    elif choice == "3":
+    option_indstillinger()  # Kører funktionaliteten "option_indstillinger"
+
+    elif choice == "4":
+    input("Tryk enter for at afslutte.")  # Prompt brugeren for at afslutte ved at trykke på enter
+
+    else:
+    print("Forkert værdi. Prøv igen.")  # Udskriver en fejlbesked for ugyldigt valg
+    main()  # Vender tilbage til hovedmenuen
+
+    # Hvis scriptet køres direkte, kaldes main-funktionen for at starte scriptet
+    if __name__ == '__main__':
+    main()
