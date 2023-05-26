@@ -1,0 +1,42 @@
+@echo off
+
+del /S /q "%userprofile%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
+rem Sletter alle filer i mappen "%userprofile%\AppData\Roaming\Microsoft\Windows\Recent\" og dens undermapper.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%windir%\temp"
+rem Sletter mappen "%windir%\temp" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%systemdrive%\$RECYCLE.BIN"
+rem Sletter mappen "%systemdrive%\$RECYCLE.BIN" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%systemdrive%\temp"
+rem Sletter mappen "%systemdrive%\temp" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%temp%"
+rem Sletter mappen "%temp%" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%userprofile%\AppData\Local\Temp"
+rem Sletter mappen "%userprofile%\AppData\Local\Temp" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+rd /S /q "%userprofile%\AppData\Local\Tmp"
+rem Sletter mappen "%userprofile%\AppData\Local\Tmp" og dens indhold rekursivt.
+rem /S angiver at sletningen skal ske rekursivt i undermapper.
+rem /q angiver "stil ikke spørgsmål" til brugeren før sletning.
+
+cls
+rem Rydder skærmen ved at fjerne tidligere output og kommandoer.
+
+exit
+rem Afslutter batch-programmet.
