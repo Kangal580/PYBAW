@@ -1,0 +1,32 @@
+@echo off
+
+ipconfig /release
+rem Frigiver den aktuelle IP-adresse og fjerner netværkskonfigurationen.
+rem Dette vil frakoble den aktuelle netværksforbindelse.
+
+ipconfig /renew
+rem Forsøger at forny og oprette forbindelse til en ny IP-adresse.
+rem Dette vil forsøge at genoprette netværksforbindelsen.
+
+arp -d *
+rem Sletter alle arp-cacheindgange på den lokale computer.
+rem Dette vil rense ARP-cache-tabellen, der oversætter IP-adresser til MAC-adresser.
+
+nbtstat -R
+rem Tømmer NetBIOS-navnetabellen og genopbygger den.
+rem Dette vil opdatere og rense NetBIOS-navnetabellen.
+
+nbtstat -RR
+rem Frigiver og opdaterer NetBIOS-navnetabellen for den lokale computer.
+rem Dette vil forsøge at opdatere og rense NetBIOS-navnetabellen.
+
+ipconfig /flushdns
+rem Tømmer DNS-cacheindholdet på den lokale computer.
+rem Dette vil rense den midlertidige lagring af DNS-opslag.
+
+ipconfig /registerdns
+rem Registrerer DNS-navne og IP-adresser for den lokale computer.
+rem Dette vil forsøge at registrere computerens navn og IP-adresse i DNS.
+
+exit
+rem Afslutter batch-programmet.
