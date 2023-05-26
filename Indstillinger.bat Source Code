@@ -1,0 +1,19 @@
+@echo off
+
+rem Deaktiver Superfetch-tjenesten
+sc config SysMain start=disabled
+rem Ændrer konfigurationen for tjenesten "SysMain" til at starte deaktiveret.
+rem Dette vil forhindre Superfetch-tjenesten i at køre.
+
+rem Deaktiver Windows Update-tjenesten
+sc config wuauserv start=disabled
+rem Ændrer konfigurationen for tjenesten "wuauserv" til at starte deaktiveret.
+rem Dette vil forhindre Windows Update-tjenesten i at køre.
+
+rem Sæt strømplanen til Høj ydeevne
+powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+rem Ændrer den aktuelle strømplan til "Høj ydeevne" ved hjælp af den angivne GUID.
+rem Dette vil optimere systemets ydeevne ved at bruge mere strøm.
+
+exit
+rem Afslutter batch-programmet.
