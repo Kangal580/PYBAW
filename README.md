@@ -3,3 +3,5 @@ Dette program er udviklet i Python og Batch, det kan hjælpe med at optimere Win
 
 How To:
 Installer filen ned på computeren og under dist mappen ligger der en executable som der kan køres.
+
+Vigtig: Når man starter applikationen udpakker den ressourcerne i %temp% så hvis man ville gøre brug af alle funktionerne i programmet er det en god ide at køre 2 & 3 før man køre 1 da 1 sletter %temp% filerne. Dog hvis man kommer til at køre funktion 1 først, kan man bare genåbne programmet.
